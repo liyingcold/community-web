@@ -136,8 +136,9 @@ export default {
                 message:res.data.msg,
                 type:'success'
                  }),
-                this.isShow = !this.isShow
                 this.$refs['form_register'].resetFields();
+                this.isShow = !this.isShow
+               
             }
             if(res.data.status == 1){
                this.$message({
