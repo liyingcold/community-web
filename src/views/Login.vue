@@ -6,8 +6,8 @@
       <span class="title">LOGIN</span>
       <div class="login_boder">
         <el-form ref="form_login" :rules="login_rule" :model="login_form" class="login_form" >
-          <el-form-item class="login_form_item"  prop="username" >
-            <el-input class="login_form_input"  type="text" placeholder="用户名" v-model="login_form.username">
+          <el-form-item class="login_form_item"  prop="name" >
+            <el-input class="login_form_input"  type="text" placeholder="用户名" v-model="login_form.name">
             </el-input>
           </el-form-item>
           <el-form-item class="login_form_item" prop="password">
@@ -61,8 +61,8 @@ export default {
       images_data: [],
       isShow:false,
       login_form:{
-        username:'',
-        pswd:'',
+        name:'',
+        password:'',
       },
       register_form:{
         name:'',
